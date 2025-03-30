@@ -1,0 +1,72 @@
+.transfer-filter {
+  width: 232px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+  padding: 20px;
+
+  &__title {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #a0b0b9;
+    margin-bottom: 20px;
+  }
+
+  &__option {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 13px;
+    color: #4a4a4a;
+    margin-bottom: 12px;
+    padding-left: 32px;
+    user-select: none;
+    input[type="checkbox"] {
+      position: absolute;
+      opacity: 0;
+      width: 0;
+      height: 0;
+      cursor: pointer;
+    }
+  }
+
+  &__checkmark {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: 2px solid #2196f3;
+    border-radius: 3px;
+    background-color: #fff;
+    box-sizing: border-box;
+    transition: background-color 0.2s ease;
+  }
+
+  &:hover &__checkmark {
+    background-color: #f1fcff;
+  }
+
+  &__checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 5px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+
+  input:checked ~ .transfer-filter__checkmark {
+    background-color: #2196f3;
+  }
+
+  input:checked ~ .transfer-filter__checkmark::after {
+    display: block;
+  }
+}
