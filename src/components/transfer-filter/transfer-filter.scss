@@ -38,7 +38,7 @@
     transform: translateY(-50%);
     width: 20px;
     height: 20px;
-    border: 2px solid #2196f3;
+    border: 1px solid #9abbce;
     border-radius: 3px;
     background-color: #fff;
     box-sizing: border-box;
@@ -53,17 +53,18 @@
     content: "";
     position: absolute;
     display: none;
-    left: 5px;
+    left: 6px;
     top: 2px;
     width: 5px;
     height: 10px;
-    border: solid #fff;
+    border: solid #2196f3;
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
   }
 
   input:checked ~ .transfer-filter__checkmark {
-    background-color: #2196f3;
+    background-color: #fff;
+    border: 1px solid #2196f3;
   }
 
   input:checked ~ .transfer-filter__checkmark::after {

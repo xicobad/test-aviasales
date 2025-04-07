@@ -38,7 +38,8 @@
   &__col {
     display: flex;
     flex-direction: column;
-    min-width: 80px;
+    min-width: 100px;
+    max-width: 110px;
   }
 
   &__label {

@@ -7,9 +7,7 @@ import "./App.scss";
 const App: React.FC = () => {
   return (
     <Provider store={store}>
-      <div className="App">
         <TicketsPage />
-      </div>
     </Provider>
   );
 };
