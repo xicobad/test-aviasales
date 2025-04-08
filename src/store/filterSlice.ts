@@ -14,11 +14,11 @@ export interface FilterState {
 
 const initialState: FilterState = {
   selected: {
-    "0": false,
-    "1": false,
-    "2": false,
-    "3": false,
-    all: false,
+    "0": true,
+    "1": true,
+    "2": true,
+    "3": true,
+    all: true,
   },
 };
 

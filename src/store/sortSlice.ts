@@ -1,13 +1,13 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-export type SortType = "cheap" | "fast" | "optimal";
+export type SortType = "cheap" | "fast" | "optimal" | "default";
 
 export interface SortState {
   selected: SortType;
 }
 
 const initialState: SortState = {
-  selected: "cheap",
+  selected: "default",
 };
 
 export const sortSlice = createSlice({

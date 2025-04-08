@@ -33,6 +33,12 @@ const SortBar: React.FC = () => {
       >
         Оптимальный
       </button>
+      <button
+        className={`sort-bar__button ${selected === "default" ? "sort-bar__button--active" : ""}`}
+        onClick={() => handleSort("default")}
+      >
+        Без фильтров
+      </button>
     </div>
   );
 };
